@@ -1,6 +1,6 @@
 # cr — Claude Code Session Navigator
 # Add this to your ~/.zshrc or ~/.bashrc
-# More info: https://github.com/edgarmohn-git/claude-session-manager
+# More info: https://github.com/adp-Lab/claude-session-manager
 
 function cr() {
   # Derive the Claude project folder key from the current directory
@@ -23,7 +23,7 @@ function cr() {
     echo "  Expected location: $sessions_file"
     echo ""
     echo "  Create one based on the template:"
-    echo "  https://github.com/edgarmohn-git/claude-session-manager"
+    echo "  https://github.com/adp-Lab/claude-session-manager"
     echo ""
   fi
 

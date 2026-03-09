@@ -55,7 +55,7 @@ $ cr
 ### Option A — Automatic (recommended)
 
 ```bash
-git clone https://github.com/edgarmohn-git/claude-session-manager.git
+git clone https://github.com/adp-Lab/claude-session-manager.git
 cd claude-session-manager
 bash install.sh
 source ~/.zshrc

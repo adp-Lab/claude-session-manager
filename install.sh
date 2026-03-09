@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # install.sh — Claude Session Manager setup
-# https://github.com/edgarmohn-git/claude-session-manager
+# https://github.com/adp-Lab/claude-session-manager
 
 set -e
 
