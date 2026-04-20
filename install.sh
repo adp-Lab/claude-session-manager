@@ -30,7 +30,7 @@ else
 fi
 
 # Step 2: Derive project key and create sessions.md
-PROJECT_KEY=$(pwd | sed 's|^/||; s|/|-|g')
+PROJECT_KEY=$(pwd | sed 's|/|-|g')
 MEMORY_DIR="$HOME/.claude/projects/$PROJECT_KEY/memory"
 SESSIONS_FILE="$MEMORY_DIR/sessions.md"
 
@@ -44,13 +44,17 @@ else
   echo "[OK] sessions.md created from template."
 fi
 
-# Step 3: Check for glow
+# Step 3: Require glow
 echo ""
 if command -v glow &>/dev/null; then
-  echo "[OK] glow is installed — session maps will render with formatting."
+  echo "[OK] glow is installed."
 else
-  echo "[!] glow not found. Install it for formatted session maps:"
-  echo "    brew install glow"
+  echo "[ERROR] glow is required but not installed."
+  echo "        Install it first, then re-run this script:"
+  echo ""
+  echo "        brew install glow"
+  echo ""
+  exit 1
 fi
 
 echo ""
